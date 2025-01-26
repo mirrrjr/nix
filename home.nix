@@ -26,8 +26,8 @@
 
     home.stateVersion = "24.11"; # Please read the comment before changing.
 
-    home.packages = [
-        pkgs.hello
+    home.packages = with pkgs; [
+      virtualbox
     ];
 
     home.file = {
