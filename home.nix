@@ -31,6 +31,7 @@
       gnome-tweaks
       gnome-browser-connector
       gnome-shell
+      gnomeExtensions.dash-to-panel
     ];
 
     home.file = {
