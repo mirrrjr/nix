@@ -28,8 +28,7 @@
     programs.zsh.enable = true;
 
     virtualisation.virtualbox.host.enable = true;
-    virtualisation.virtualbox.host.enable = true;
-    users.extraGroups.vboxusers.members = [ “djw” ];
+    users.extraGroups.vboxusers.members = [ "darthmirr" ];
     virtualisation.virtualbox.guest.enable = true;
     virtualisation.virtualbox.guest.draganddrop = true;
 
@@ -110,6 +109,7 @@
       wget
       curl
       git
+      virtualbox
     ];
 
     # Some programs need SUID wrappers, can be configured further or are
