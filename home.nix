@@ -28,6 +28,9 @@
 
     home.packages = with pkgs; [
       virtualbox
+      gnome-tweaks
+      gnome-browser-connector
+      gnome-shell
     ];
 
     home.file = {
