@@ -42,7 +42,7 @@
     # home.file.".config/kitty/kitty.conf".source = ./kitty.conf;
 
     home.sessionVariables = {
-        EDITOR = "helix";
+        EDITOR = "hx";
     };
 
     # Let Home Manager install and manage itself.
