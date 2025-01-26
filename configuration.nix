@@ -28,6 +28,10 @@
     programs.zsh.enable = true;
 
     virtualisation.virtualbox.host.enable = true;
+    virtualisation.virtualbox.host.enable = true;
+    users.extraGroups.vboxusers.members = [ “djw” ];
+    virtualisation.virtualbox.guest.enable = true;
+    virtualisation.virtualbox.guest.draganddrop = true;
 
     networking.hostName = "nixos"; # Define your hostname.
     # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
