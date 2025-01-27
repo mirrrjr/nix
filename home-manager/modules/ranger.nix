@@ -15,6 +15,7 @@
       preview_images_method = "ueberzug";
       draw_borders = true;
       w3m_delay = 0;
+      show_hidden = true;
     };
 
     extraConfig = ''
