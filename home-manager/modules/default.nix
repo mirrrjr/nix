@@ -11,7 +11,7 @@
     ./ranger.nix
     ./starship.nix
     ./stylix.nix
-    ./zathura.nix
+    ./tmux.nix
     ./zsh.nix
   ];
 }
