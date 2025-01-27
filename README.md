@@ -2,7 +2,7 @@
 
 Welcome to my redesigned NixOS configuration built for efficiency and aesthetics. Right now I'm trying to commit something everyday. Let's see how long I can go.
 
-![screenshot](./.git/assets/terminal.png)
+![screenshot](./screenshots/terminal.png)
 
 ## ✨ Features
 
