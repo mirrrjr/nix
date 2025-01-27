@@ -94,6 +94,7 @@
           kitty
           firefox
           zed-editor
+          virtualbox
         ];
     };
 
@@ -109,7 +110,6 @@
       wget
       curl
       git
-      virtualbox
     ];
 
     # Some programs need SUID wrappers, can be configured further or are
