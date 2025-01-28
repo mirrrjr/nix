@@ -20,7 +20,7 @@
     homeStateVersion = "24.11";
     user = "darthmirr";
     hosts = [
-      { hostname = "nixos"; stateVersion = "24.11"; },
+      { hostname = "nixos"; stateVersion = "24.11"; }
       { hostname = "wsl"; stateVersion = "24.11"; }
     ];
 
