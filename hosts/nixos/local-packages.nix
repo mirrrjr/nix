@@ -5,6 +5,9 @@
     zed-editor
     pymol
 
+    # Office
+    libreoffice
+
     # CLI Apps
     autodock-vina
 
