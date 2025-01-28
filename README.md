@@ -1,6 +1,9 @@
-# ❄️ NixOS Config Reborn
+# ❄️ NixOS Config
 
-Welcome to my redesigned NixOS configuration built for efficiency and aesthetics. Right now I'm trying to commit something everyday. Let's see how long I can go.
+[![NixOS](https://img.shields.io/badge/NixOS-24.11-blue.svg)](https://nixos.org)
+[![License](https://img.shields.io/github/license/ilosrim/dotfiles)](./LICENSE)
+
+Welcome to my NixOS configuration built for efficiency and aesthetics. Right now I'm trying to commit something everyday. Let's see how long I can go.
 
 ![screenshot](./screenshots/terminal.png)
 
