@@ -10,6 +10,9 @@
 
       # FireShot
       { id = "mcbpblocgmgfnpjjppndjkmgjaogfceg"; }
+
+      # Google Translate
+      { id = "aapbdbdomjkkjkaonfhkkikfgjllcleb"; }
     ];
   };
 }
