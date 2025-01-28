@@ -19,6 +19,11 @@
     polarity = "dark";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
 
+    opacity = {
+      desktop = 0.5;
+      terminal = 0.8;
+    };
+
     targets = {
       neovim.enable = false;
       waybar.enable = false;
@@ -59,9 +64,9 @@
 
     iconTheme = {
       enable = true;
-      package = pkgs.papirus-icon-theme;
-      dark = "Papirus-Dark";
-      light = "Papirus-Light";
+      package = pkgs.whitesur-icon-theme;
+      dark = "WhiteSur";
+      light = "WhiteSur";
     };
 
     image = pkgs.fetchurl {

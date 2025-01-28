@@ -1,14 +1,14 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
-    papirus-icon-theme
+    whitesur-gtk-theme
     pcmanfm-qt
   ];
   qt = {
     enable = true;
     platformTheme.name = "gtk";
     style = {
-      package = pkgs.adwaita-qt;
-      name = "adwaita-dark";
+      package = pkgs.whitesur-gtk-theme;
+      name = "whitesur";
     };
   };
 }
