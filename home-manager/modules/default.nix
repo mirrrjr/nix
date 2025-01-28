@@ -7,7 +7,7 @@
     ./git.nix
     ./lazygit.nix
     ./neovim.nix
-    ./qt.nix
+    # ./qt.nix
     ./helix.nix
     ./ranger.nix
     ./starship.nix

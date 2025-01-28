@@ -1,7 +1,6 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
     whitesur-gtk-theme
-    pcmanfm-qt
   ];
   qt = {
     enable = true;
