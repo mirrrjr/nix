@@ -22,6 +22,10 @@ jobs:
   build-nixos:
     runs-on: ubuntu-latest
 
+    strategy: 
+      matrix: 
+        hostname: [nixos, wsl]
+
     steps:
       - name: Check out the repository
         uses: actions/checkout@v4
@@ -36,4 +40,4 @@ jobs:
         run: nix flake check --all-systems --show-trace
 
       - name: Build NixOS configuration
-        run: nix build .#nixosConfigurations.nixos.config.system.build.toplevel --show-trace
+        run: nix build .#nixosConfigurations.${{ matrix.hostname }}.config.system.build.toplevel --show-trace
