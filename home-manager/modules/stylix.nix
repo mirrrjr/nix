@@ -33,9 +33,9 @@
     };
 
     cursor = {
-      name = "DMZ-Black";
+      name = "McMojave-cursors";
       size = 24;
-      package = pkgs.vanilla-dmz;
+      package = pkgs.whitesur-gtk-theme;
     };
 
     fonts = {
