@@ -1,13 +1,15 @@
 {
   imports = [
+    ./alacritty.nix
     ./kitty.nix
     ./bat.nix
     ./chromium.nix
+    # ./epiphany.nix
     ./eza.nix
     ./git.nix
     ./lazygit.nix
     ./neovim.nix
-    # ./qt.nix
+    ./qutebrowser.nix
     ./helix.nix
     ./ranger.nix
     ./starship.nix
