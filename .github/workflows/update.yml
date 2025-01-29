@@ -22,4 +22,4 @@ jobs:
       - name: Update flake.lock
         uses: DeterminateSystems/update-flake-lock@main
         with:
-          token: ${{ secrets.PAT }}
+          token: ${{ secrets.PATww }}
