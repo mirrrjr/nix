@@ -4,6 +4,8 @@
     telegram-desktop
     zed-editor
     pymol
+    qutebrowser
+    epiphany
 
     # Office
     libreoffice

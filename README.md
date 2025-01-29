@@ -7,6 +7,59 @@ Welcome to my NixOS configuration built for efficiency and aesthetics. Right now
 
 ![screenshot](./screenshots/terminal.png)
 
+## File tree
+
+```plaintext
+.dotfiles/
+├── home-manager/
+│   ├── modules/
+│   │   ├── bat.nix
+│   │   ├── chromium.nix
+│   │   ├── default.nix
+│   │   ├── eza.nix
+│   │   ├── git.nix
+│   │   ├── helix.nix
+│   │   ├── kitty.nix
+│   │   ├── lazygit.nix
+│   │   ├── neovim.nix
+│   │   ├── qutebrowser.nix
+│   │   ├── ranger.nix
+│   │   ├── starship.nix
+│   │   ├── stylix.nix
+│   │   ├── tmux.nix
+│   │   ├── zed.nix
+│   │   └── zsh.nix
+│   ├── home.nix
+│   └── home-packages.nix
+├── hosts/
+│   ├── nixos/
+│   │   ├── configuration.nix
+│   │   ├── hardware-configuration.nix
+│   │   └── local-packages.nix
+│   └── wsl/
+│       ├── configuration.nix
+│       ├── hardware-configuration.nix
+│       └── local-packages.nix
+├── nixos/
+│   └── modules/
+│       ├── audio.nix
+│       ├── bluetooth.nix
+│       ├── boot.nix
+│       ├── default.nix
+│       ├── env.nix
+│       ├── home-manager.nix
+│       ├── kernel.nix
+│       ├── mime.nix
+│       ├── net.nix
+│       ├── nh.nix
+│       ├── nix.nix
+│       ├── timezone.nix
+│       ├── user.nix
+│       └── zram.nix
+├── flake.lock
+└── flake.nix
+```
+
 ## ✨ Features
 
 - 🖥️ **Multiple Hosts Support**: Easy to configure for different hosts.
