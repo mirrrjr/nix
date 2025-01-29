@@ -5,29 +5,21 @@
 { pkgs, stateVersion, hostname, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
+  imports = [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./local-packages.nix
       ../../nixos/modules
-    ];
+  ];
+
+  disabledModules = [
+    ../../nixos/audio.nix
+  ];
 
   environment.systemPackages = [ pkgs.home-manager ];
 
   networking.hostName = hostname;
 
   system.stateVersion = stateVersion;
-
-  # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
-
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
 
   # List services that you want to enable:
 

@@ -12,6 +12,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Neovim Framework repository
+    nvf.url = "github:notashelf/nvf";
+
     # HELIX editor
     helix = {
       url = "github:helix-editor/helix/master";
@@ -25,7 +28,7 @@
     stylix.url = "github:danth/stylix/release-24.11";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: let
+  outputs = { self, nixpkgs, home-manager, helix, nvf, ... }@inputs: let
     system = "x86_64-linux";
     homeStateVersion = "24.11";
     user = "darthmirr";

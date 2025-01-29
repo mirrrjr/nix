@@ -11,6 +11,7 @@
     ./neovim.nix
     ./qutebrowser.nix
     ./helix.nix
+    ./vim.nix
     ./ranger.nix
     ./starship.nix
     ./stylix.nix
