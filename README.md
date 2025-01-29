@@ -7,6 +7,7 @@ Welcome to my NixOS configuration built for efficiency and aesthetics. Right now
 
 ![screenshot](./screenshots/terminal.png)
 
+<!--
 ## File tree
 
 ```plaintext
@@ -59,6 +60,7 @@ Welcome to my NixOS configuration built for efficiency and aesthetics. Right now
 ├── flake.lock
 └── flake.nix
 ```
+-->
 
 ## ✨ Features
 
@@ -129,8 +131,11 @@ To get started with this setup, follow these steps:
     home-manager switch --flake ./#<username>
     ```
 
-## 😎 Enjoy!
 
 ## 🤝 Contributions
 
 Feel free to fork the repository and submit pull requests if you'd like to contribute improvements. Open issues if you encounter any problems with the config or have ideas for new features.
+
+## 🫶 Thanks
+
+- [Template](https://github.com/Andrey0189/nixos-config-reborn) - Learned from his configurations
