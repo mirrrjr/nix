@@ -6,6 +6,7 @@
     pymol
     qutebrowser
     epiphany
+    postman
 
     # Office
     libreoffice

@@ -21,7 +21,7 @@
 
     opacity = {
       desktop = 0.5;
-      terminal = 0.8;
+      terminal = 1.0;
     };
 
     targets = {
@@ -57,7 +57,7 @@
       };
 
       sizes = {
-        terminal = 13;
+        terminal = 11;
         applications = 11;
       };
     };

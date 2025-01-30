@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     # CLI utils
     helix
+    vim
     gcc
     git
     ffmpeg
@@ -23,5 +24,8 @@
 
     # Other
     nix-prefetch-scripts
+    nil
+    nixd
+    nixpkgs-fmt
   ];
 }
