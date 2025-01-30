@@ -8,7 +8,7 @@
 
 Welcome to my NixOS configuration built for efficiency and aesthetics. Right now I'm trying to commit something everyday. Let's see how long I can go.
 
-![screenshot](./screenshots/terminal.png)
+![screenshot](./screenshots/banner.png)
 
 <!--
 ## File tree
