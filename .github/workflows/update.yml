@@ -18,8 +18,8 @@ jobs:
 
       - name: Cache Nix store
         uses: DeterminateSystems/flake-cache-action@main
-        with:
-          token: ${{ secrets.FLAKEHUB_AUTH_TOKEN }}
+        # with:
+        #   token: ${{ secrets.FLAKEHUB_AUTH_TOKEN }}
 
       - name: Update flake.lock
         uses: DeterminateSystems/update-flake-lock@main
