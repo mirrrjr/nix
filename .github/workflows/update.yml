@@ -3,7 +3,7 @@ name: Update CI
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * 6"
 
 jobs:
   build:
@@ -17,7 +17,9 @@ jobs:
         uses: DeterminateSystems/nix-installer-action@main
 
       - name: Cache Nix store
-        uses: DeterminateSystems/magic-nix-cache-action@main
+        uses: DeterminateSystems/flake-cache-action@main
+        with:
+          token: ${{ secrets.FLAKEHUB_AUTH_TOKEN }}
 
       - name: Update flake.lock
         uses: DeterminateSystems/update-flake-lock@main
