@@ -27,5 +27,6 @@
     nil
     nixd
     nixpkgs-fmt
+    alejandra
   ];
 }

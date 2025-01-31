@@ -10,7 +10,7 @@
     ./lazygit.nix
     ./neovim.nix
     ./qutebrowser.nix
-    ./helix.nix
+    ./helix
     ./ranger.nix
     ./starship.nix
     ./stylix.nix
