@@ -2,10 +2,10 @@
   programs.zed-editor = {
     enable = true;
     userSettings = {
-      "buffer_font_family" = "Fira Code";
+      "buffer_font_family" = "ComicShannsMono Nerd Font";
       "buffer_font_size" = 14;
       "theme" = "Gruvbox Material";
-      "ui_font_family" = "Fira Sans";
+      "ui_font_family" = "ComicShannsMono Nerd Font";
       "ui_font_size" = 14;
 
       features = {
@@ -14,9 +14,7 @@
       telemetry = {
         metrics = false;
       };
-      vim_mode = true;
-
-      format_on_save = true;
+      vim_mode = false;
 
       lsp = {
         nil = {
