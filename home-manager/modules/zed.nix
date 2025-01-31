@@ -1,7 +1,7 @@
 {
   programs.zed-editor = {
     enable = true;
-    settings = {
+    userSettings = {
       "buffer_font_family" = "Fira Code";
       "buffer_font_size" = 14;
       "theme" = "Gruvbox Material";
