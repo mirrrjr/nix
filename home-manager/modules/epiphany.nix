@@ -1,9 +1,10 @@
-{ config, lib, ... }:
-
+{
+  config,
+  lib,
+  ...
+}:
 with config.lib.stylix.colors.withHashtag;
-with config.stylix.fonts;
-
-let
+with config.stylix.fonts; let
   background = base00;
   secondary-background = base01;
   selection-background = base03;
@@ -14,11 +15,10 @@ let
   error = base08;
 
   info = base0B;
-  secondary-info = base0C;
+  # secondary-info = base0C;
 
   warning = base0E;
-in
-{
+in {
   # Stylix settings for color scheme and fonts
   config = lib.mkIf (config.stylix.enable) {
     programs.stylix.settings = {
@@ -96,8 +96,8 @@ in
 
   # GTK settings for Epiphany (and other GTK apps)
   environment.variables = {
-    GTK_THEME = "Adwaita-dark";  # Choose your GTK theme, e.g., Adwaita-dark
-    GDK_DPI_SCALE = "1.0";       # Set scale factor if needed
+    GTK_THEME = "Adwaita-dark"; # Choose your GTK theme, e.g., Adwaita-dark
+    GDK_DPI_SCALE = "1.0"; # Set scale factor if needed
   };
 
   # Enable font configuration for Epiphany and other GTK apps

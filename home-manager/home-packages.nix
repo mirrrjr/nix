@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
@@ -27,8 +27,9 @@
     nix-prefetch-scripts
 
     # Formatter
-    alejandra
     nil
     nixd
+    nixpkgs-fmt
+    alejandra
   ];
 }

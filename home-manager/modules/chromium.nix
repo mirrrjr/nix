@@ -13,6 +13,9 @@
 
       # Google Translate
       { id = "aapbdbdomjkkjkaonfhkkikfgjllcleb"; }
+
+      # Browsec VPN - Free VPN for Chrome
+      { id = "omghfjlpggmjjaagoclmmobgdodcjboh"; }
     ];
   };
 }
