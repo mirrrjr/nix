@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     # Desktop apps
     telegram-desktop
@@ -23,5 +23,8 @@
     gnome-browser-connector
     gnome-shell
     gnomeExtensions.dash-to-panel
+
+    # Others
+    boost
   ];
 }
