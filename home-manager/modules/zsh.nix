@@ -12,7 +12,7 @@
       upd = "nh os switch --update";
       hms = "nh home switch";
 
-      dotfile = "zededitor ${flakeDir}";
+      dtfl = "zeditor ${flakeDir}";
 
       r = "ranger";
       v = "nvim";
