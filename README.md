@@ -90,7 +90,7 @@ To get started with this setup, follow these steps:
 
    ```bash
    cd hosts
-   cp -r nixos <your_hostname>
+   cp -r darthnix <your_hostname>
    cd <your_hostname>
    ```
 
