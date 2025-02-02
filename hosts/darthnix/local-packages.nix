@@ -2,10 +2,7 @@
   environment.systemPackages = with pkgs; [
     # Desktop apps
     telegram-desktop
-    zed-editor
     pymol
-    qutebrowser
-    epiphany
     postman
 
     # Office

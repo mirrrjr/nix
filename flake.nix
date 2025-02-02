@@ -28,38 +28,57 @@
     stylix.url = "github:danth/stylix/release-24.11";
   };
 
-  outputs = { self, nixpkgs, home-manager, helix, nvf, ... }@inputs: let
+  outputs = {
+    self,
+    nixpkgs,
+    home-manager,
+    helix,
+    nvf,
+    ...
+  } @ inputs: let
     system = "x86_64-linux";
     homeStateVersion = "24.11";
     user = "darthmirr";
     hosts = [
-      { hostname = "nixos"; stateVersion = "24.11"; }
-      { hostname = "wsl"; stateVersion = "24.11"; }
+      {
+        hostname = "darthnix";
+        stateVersion = "24.11";
+      }
+      {
+        hostname = "wsl";
+        stateVersion = "24.11";
+      }
     ];
 
-    makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
-      system = system;
-      specialArgs = {
-        inherit inputs stateVersion hostname user;
+    makeSystem = {
+      hostname,
+      stateVersion,
+    }:
+      nixpkgs.lib.nixosSystem {
+        system = system;
+        specialArgs = {
+          inherit inputs stateVersion hostname user;
+        };
+
+        modules = [
+          ./hosts/${hostname}/configuration.nix
+        ];
       };
-
-      modules = [
-        ./hosts/${hostname}/configuration.nix
-      ];
-    };
-
   in {
     nixosConfigurations = nixpkgs.lib.foldl' (configs: host:
-      configs // {
+      configs
+      // {
         "${host.hostname}" = makeSystem {
           inherit (host) hostname stateVersion;
         };
-      }) {} hosts;
+      }) {}
+    hosts;
 
     homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
       extraSpecialArgs = {
         inherit inputs homeStateVersion user;
+        hostname = hosts.hostname;
       };
 
       modules = [

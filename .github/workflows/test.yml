@@ -24,9 +24,9 @@ jobs:
   build-nixos:
     runs-on: ubuntu-latest
 
-    strategy: 
-      matrix: 
-        hostname: [nixos, wsl]
+    strategy:
+      matrix:
+        hostname: [darthnix, wsl]
 
     steps:
       - name: Check out the repository

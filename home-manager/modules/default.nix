@@ -4,7 +4,6 @@
     ./kitty.nix
     ./bat.nix
     ./chromium.nix
-    # ./epiphany.nix
     ./eza.nix
     ./git.nix
     ./lazygit.nix
