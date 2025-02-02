@@ -4,6 +4,7 @@
   inputs = {
     # Nix ecosystem
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+    flake-utils.url = "github:numtide/flake-utils";
 
     # Home Manager
     home-manager = {
@@ -11,11 +12,23 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Neovim Framework repository
+    nvf.url = "github:notashelf/nvf";
+
+    # HELIX editor
+    helix = {
+      url = "github:helix-editor/helix/master";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        flake-utils.follows = "flake-utils";
+      };
+    };
+
     # Stylix
     stylix.url = "github:danth/stylix/release-24.11";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: let
+  outputs = { self, nixpkgs, home-manager, helix, nvf, ... }@inputs: let
     system = "x86_64-linux";
     homeStateVersion = "24.11";
     user = "darthmirr";

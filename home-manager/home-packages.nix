@@ -5,6 +5,7 @@
     # CLI utils
     helix
     vim
+    neovim
     gcc
     git
     ffmpeg
@@ -24,6 +25,8 @@
 
     # Other
     nix-prefetch-scripts
+
+    # Formatter
     nil
     nixd
     nixpkgs-fmt
