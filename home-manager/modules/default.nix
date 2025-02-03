@@ -7,7 +7,7 @@
     ./eza.nix
     ./git.nix
     ./lazygit.nix
-    ./neovim.nix
+    # ./neovim.nix
     ./qutebrowser.nix
     ./helix
     ./vim.nix
