@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   programs.tmux = {
     enable = true;
     baseIndex = 1;
@@ -11,6 +11,16 @@
       bind -n M-r source-file ~/.config/tmux/tmux.conf \; display "Reloaded!"
       bind C-p previous-window
       bind C-n next-window
+
+      bind h select-pane -L
+      bind j select-pane -D
+      bind k select-pane -U
+      bind l select-pane -R
+
+      bind-key J resize-pane -D 5
+      bind-key K resize-pane -U 5
+      bind-key H resize-pane -L 5
+      bind-key L resize-pane -R 5
 
       bind -n M-1 select-window -t 1
       bind -n M-2 select-window -t 2

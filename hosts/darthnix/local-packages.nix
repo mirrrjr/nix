@@ -2,6 +2,7 @@
   environment.systemPackages = with pkgs; [
     # Desktop apps
     telegram-desktop
+    chromium
     pymol
     postman
 

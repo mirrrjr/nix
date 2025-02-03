@@ -17,8 +17,8 @@
       vim_mode = false;
 
       lsp = {
+        autoArchive = true;
         nil = {
-          autoArchive = true;
           initialization_options = {
             formatting = {
               command = ["alejandra" "--quiet" "--"];
