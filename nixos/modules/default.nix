@@ -11,7 +11,7 @@
     ./nh.nix
     ./nix.nix
     ./packages.nix
-    ./postgresql.nix
+    # ./postgresql.nix
     ./timezone.nix
     ./user.nix
     ./zram.nix
