@@ -42,12 +42,14 @@
       bind -n M-S-Up resize-pane -U 3
       bind -n M-S-Down resize-pane -D 3
 
-      bind -n M-s split-window -v
-      bind -n M-v split-window -h
+      bind -n M-s split-window -v -c "#{pane_current_path}"
+      bind -n M-v split-window -h -c "#{pane_current_path}"
+      bind '"' split-window -v -c "#{pane_current_path}"
+      bind '%' split-window -h -c "#{pane_current_path}"
 
-      bind -n M-o new-window -c ~/para "nvim -c 'Telescope find_files' '0 Inbox/todolist.md'"
-      bind -n M-f new-window -c ~/.dotfiles "nvim -c 'Telescope find_files' flake.nix"
-      bind -n M-n new-window -c ~/.config/nvim "nvim -c 'Telescope find_files' init.lua"
+      bind -n M-o new-window -c ~/para "hx -c 'Telescope find_files' '0 Inbox/todolist.md'"
+      bind -n M-f new-window -c ~/.dotfiles "hx -c 'Telescope find_files' flake.nix"
+      bind -n M-n new-window -c ~/.config/helix "hx -c 'Telescope find_files' init.lua"
       bind -n M-Enter new-window
       bind -n M-c kill-pane
       bind -n M-q kill-window
