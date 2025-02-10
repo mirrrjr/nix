@@ -21,7 +21,11 @@
 
     # Coding stuff
     nodejs_22
+    yarn
+    nest-cli
     python311
+    micromamba
+    deno
 
     # Other
     nix-prefetch-scripts
