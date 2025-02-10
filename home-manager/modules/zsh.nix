@@ -31,6 +31,7 @@
     history.path = "${config.xdg.dataHome}/zsh/history";
 
     initExtra = ''
+      export PATH=$HOME/ADFRsuite-1.0/bin:$PATH
       # Start Tmux automatically if not already running. No Tmux in TTY
       if [ -z "$TMUX" ] && [ -n "$DISPLAY" ]; then
         tmux attach-session -t default || tmux new-session -s default
