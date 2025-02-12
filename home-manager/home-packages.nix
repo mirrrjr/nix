@@ -24,7 +24,6 @@
     yarn
     nest-cli
     python311
-    micromamba
     deno
 
     # Other
