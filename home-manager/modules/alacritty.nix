@@ -4,7 +4,8 @@
     settings = {
       window = {
         decorations = "none"; # Top barni yashiradi
-        opacity = 0.8;
+        # opacity = 0.8;
+        blur = true;
       };
 
       font = {
