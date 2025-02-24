@@ -5,7 +5,6 @@
     settings = {
       add_newline = true;
       command_timeout = 3600000;
-      ignore_timeout = true;
       scan_timeout = 500;
       hostname = {
         ssh_only = false;
