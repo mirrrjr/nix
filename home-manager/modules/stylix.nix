@@ -25,7 +25,7 @@
 
     opacity = {
       desktop = 0.7;
-      terminal = 0.8;
+      terminal = 1.0;
     };
 
     targets = {
