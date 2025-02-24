@@ -25,14 +25,16 @@
     };
 
     # Stylix
-    stylix.url = "github:danth/stylix/release-24.11";
+    stylix = {
+      url = "github:danth/stylix/release-24.11";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
     self,
     nixpkgs,
     home-manager,
-    helix,
     nvf,
     ...
   } @ inputs: let

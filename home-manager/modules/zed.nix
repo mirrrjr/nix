@@ -18,7 +18,7 @@
 
       lsp = {
         nil = {
-          autoArchive = true;
+          autoArchive.enable = true;
           initialization_options = {
             formatting = {
               command = ["alejandra" "--quiet" "--"];
