@@ -1,10 +1,10 @@
-{ lib, ... }: {
+{lib, ...}: {
   programs.alacritty = {
     enable = true;
     settings = {
-      # window.opacity = 1.0;
       window = {
         decorations = "none"; # Top barni yashiradi
+        opacity = 0.8;
       };
 
       font = {
