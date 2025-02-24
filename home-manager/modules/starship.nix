@@ -4,6 +4,7 @@
     enableZshIntegration = true;
     settings = {
       add_newline = true;
+      command_timeout = 1000;
       hostname = {
         ssh_only = false;
         format = "[$ssh_symbol$hostname]($style) ";
