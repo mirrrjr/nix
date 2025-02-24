@@ -74,8 +74,8 @@
     };
 
     image = pkgs.fetchurl {
-      url = "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/raw/branch/master/png/gruvbox-dark-blue.png";
-      sha256 = "1jrmdhlcnmqkrdzylpq6kv9m3qsl317af3g66wf9lm3mz6xd6dzs";
+      url = "https://github.com/ilosrim/my-configs/blob/master/assets/wallpapers/wxp.jpg";
+      sha256 = "0ybi8hm2jdbvnr4xia6d1qdarl7mlqac3i352hvfhnvhbm31pl5a";
     };
   };
 }
