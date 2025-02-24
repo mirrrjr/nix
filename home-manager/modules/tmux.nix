@@ -55,20 +55,41 @@
       bind -n M-q kill-window
       bind -n M-Q kill-session
     '';
-    plugins = with pkgs; [
-      tmuxPlugins.dracula
-      tmuxPlugins.tmux-sidebar
-      # {
-      #   plugin = tmuxPlugins.resurrect;
-      #   extraConfig = "set -g @resurrect-strategy-nvim 'session'";
-      # }
-      # {
-      #   plugin = tmuxPlugins.continuum;
-      #   extraConfig = ''
-      # set -g @continuum-restore 'on'
-      # set -g @continuum-save-interval '60' # minutes
-      #   '';
-      # }
+
+    # plugins = with pkgs; [
+    #   {
+    #     plugin = tmuxPlugins.dracula;
+    #     extraConfig = "set -g @plugin 'dracula/tmux'";
+    #   }
+    #   tmuxPlugins.tmux-sidebar
+    #   # {
+    #   #   plugin = tmuxPlugins.resurrect;
+    #   #   extraConfig = "set -g @resurrect-strategy-nvim 'session'";
+    #   # }
+    #   # {
+    #   #   plugin = tmuxPlugins.continuum;
+    #   #   extraConfig = ''
+    #   # set -g @continuum-restore 'on'
+    #   # set -g @continuum-save-interval '60' # minutes
+    #   #   '';
+    #   # }
+    # ];
+
+    plugins = with pkgs.tmuxPlugins; [
+      sensible
+      yank
+      {
+        plugin = dracula;
+        extraConfig = ''
+          set -g @dracula-show-battery false
+          set -g @dracula-show-powerline true
+          set -g @dracula-refresh-rate 10
+        '';
+      }
     ];
+
+    extraConfig = ''
+      set -g mouse on
+    '';
   };
 }
