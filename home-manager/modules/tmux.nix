@@ -56,36 +56,25 @@
       bind -n M-Q kill-session
     '';
 
-    # plugins = with pkgs; [
-    #   {
-    #     plugin = tmuxPlugins.dracula;
-    #     extraConfig = "set -g @plugin 'dracula/tmux'";
-    #   }
-    #   tmuxPlugins.tmux-sidebar
-    #   # {
-    #   #   plugin = tmuxPlugins.resurrect;
-    #   #   extraConfig = "set -g @resurrect-strategy-nvim 'session'";
-    #   # }
-    #   # {
-    #   #   plugin = tmuxPlugins.continuum;
-    #   #   extraConfig = ''
-    #   # set -g @continuum-restore 'on'
-    #   # set -g @continuum-save-interval '60' # minutes
-    #   #   '';
-    #   # }
-    # ];
-
-    plugins = with pkgs.tmuxPlugins; [
-      sensible
-      yank
+    plugins = with pkgs; [
+      tmuxPlugins.gruvbox
       {
-        plugin = dracula;
+        plugin = tmuxPlugins.tmux-sidebar;
         extraConfig = ''
-          set -g @dracula-show-battery false
-          set -g @dracula-show-powerline true
-          set -g @dracula-refresh-rate 10
+          set -g @plugin 'tmux-plugins/tmux-sidebar'
         '';
       }
+      # {
+      #   plugin = tmuxPlugins.resurrect;
+      #   extraConfig = "set -g @resurrect-strategy-nvim 'session'";
+      # }
+      # {
+      #   plugin = tmuxPlugins.continuum;
+      #   extraConfig = ''
+      # set -g @continuum-restore 'on'
+      # set -g @continuum-save-interval '60' # minutes
+      #   '';
+      # }
     ];
   };
 }
