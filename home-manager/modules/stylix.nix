@@ -1,5 +1,9 @@
-{ pkgs, inputs, ... }: {
-  imports = [ inputs.stylix.homeManagerModules.stylix ];
+{
+  pkgs,
+  inputs,
+  ...
+}: {
+  imports = [inputs.stylix.homeManagerModules.stylix];
 
   home.packages = with pkgs; [
     dejavu_fonts
@@ -11,17 +15,17 @@
     font-awesome
     powerline-fonts
     powerline-symbols
-    (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
+    (nerdfonts.override {fonts = ["NerdFontsSymbolsOnly"];})
   ];
 
   stylix = {
     enable = true;
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
 
     opacity = {
-      desktop = 0.5;
-      terminal = 1.0;
+      desktop = 0.7;
+      terminal = 0.8;
     };
 
     targets = {
