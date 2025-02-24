@@ -87,9 +87,5 @@
         '';
       }
     ];
-
-    extraConfig = ''
-      set -g mouse on
-    '';
   };
 }
