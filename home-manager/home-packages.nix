@@ -2,6 +2,14 @@
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
+    # Desktop apps
+    telegram-desktop
+    chromium
+    postman
+
+    # Office
+    libreoffice
+
     # CLI utils
     helix
     vim
@@ -25,6 +33,16 @@
     nest-cli
     python311
     deno
+
+    # WM stuff
+    libsForQt5.xwaylandvideobridge
+    libnotify
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-gnome
+    gnome-tweaks
+    gnome-browser-connector
+    gnome-shell
+    gnomeExtensions.dash-to-panel
 
     # Other
     nix-prefetch-scripts
