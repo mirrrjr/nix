@@ -1,6 +1,4 @@
-{pkgs, ...}: let
-  unstable = import <nixpkgs-unstable> {config = {allowUnfree = true;};};
-in {
+{pkgs, ...}: {
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
@@ -26,7 +24,7 @@ in {
     yarn
     nest-cli
     python311
-    unstable.deno
+    deno
 
     # Other
     nix-prefetch-scripts
