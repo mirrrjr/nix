@@ -7,7 +7,7 @@
     ./eza.nix
     ./git.nix
     ./helix
-    # ./hyperland
+    # ./hyprland
     ./lazygit.nix
     # ./neovim.nix
     # ./qt.nix
