@@ -6,7 +6,7 @@
     telegram-desktop
     chromium
     postman
-    vesktop
+    obsidian
 
     # Office
     libreoffice
@@ -18,7 +18,6 @@
     gcc
     git
     bc
-    bottom
     brightnessctl
     cliphist
     ffmpeg
@@ -30,7 +29,6 @@
     ntfs3g
     mediainfo
     playerctl
-    showmethekey
     silicon
     udisks
     ueberzugpp
