@@ -2,16 +2,39 @@
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
+    # Desktop apps
+    telegram-desktop
+    chromium
+    postman
+    obsidian
+
+    # Office
+    libreoffice
+
     # CLI utils
     helix
     vim
     neovim
     gcc
     git
+    bc
+    brightnessctl
+    cliphist
     ffmpeg
     ffmpegthumbnailer
     fzf
+    git-graph
+    grimblast
     htop
+    ntfs3g
+    mediainfo
+    playerctl
+    silicon
+    udisks
+    ueberzugpp
+    w3m
+    wtype
+    yt-dlp
     microfetch
     ripgrep
     unzip
@@ -26,7 +49,19 @@
     python311
     deno
 
+    # WM stuff
+    libsForQt5.xwaylandvideobridge
+    libnotify
+    xdg-desktop-portal-gtk
+    # xdg-desktop-portal-hyprland
+    xdg-desktop-portal-gnome
+    gnome-tweaks
+    gnome-browser-connector
+    gnome-shell
+    gnomeExtensions.dash-to-panel
+
     # Other
+    bemoji
     nix-prefetch-scripts
 
     # Formatter
