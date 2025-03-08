@@ -7,6 +7,7 @@
     chromium
     postman
     obsidian
+    teams-for-linux
 
     # Office
     libreoffice
