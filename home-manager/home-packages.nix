@@ -8,6 +8,8 @@
     postman
     obsidian
     teams-for-linux
+    imv
+    mpv
 
     # Office
     libreoffice
@@ -42,6 +44,9 @@
     wget
     wl-clipboard
     zip
+    bottom
+    showmethekey
+    yt-dlp
 
     # Coding stuff
     nodejs_22
@@ -54,12 +59,12 @@
     libsForQt5.xwaylandvideobridge
     libnotify
     xdg-desktop-portal-gtk
-    # xdg-desktop-portal-hyprland
-    xdg-desktop-portal-gnome
-    gnome-tweaks
-    gnome-browser-connector
-    gnome-shell
-    gnomeExtensions.dash-to-panel
+    xdg-desktop-portal-hyprland
+    # xdg-desktop-portal-gnome
+    # gnome-tweaks
+    # gnome-browser-connector
+    # gnome-shell
+    # gnomeExtensions.dash-to-panel
 
     # Other
     bemoji

@@ -21,7 +21,7 @@
 
   system.stateVersion = stateVersion;
 
-  nixpkgs.config.allowUnfree = true;
+  services.dbus.enable = true;
 
   # Automatic upgrades
   system.autoUpgrade.enable = true;
