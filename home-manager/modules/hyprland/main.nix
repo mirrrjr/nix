@@ -1,7 +1,7 @@
 {
   wayland.windowManager.hyprland = {
     enable = true;
-    systemd.enable = false;
+    systemd.enable = true;
     settings = {
       env = [
         # Hint Electron apps to use Wayland

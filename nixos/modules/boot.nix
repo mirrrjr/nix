@@ -9,8 +9,8 @@
   #   };
   #   efi.canTouchEfiVariables = true;
   # };
-  #
-  # boot.loader.systemd-boot.enable = false;
+
+  boot.loader.systemd-boot.enable = false;
   boot.loader.grub.enable = true;
   boot.loader.grub.devices = ["nodev"];
   boot.loader.grub.efiSupport = true;
