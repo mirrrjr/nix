@@ -1,7 +1,6 @@
 {
   programs.chromium = {
     enable = true;
-    enableWidevine = true;
     extensions = [
       # Dark Reader
       # { id = "eimadpbcbfnmbkopoojfekhnkhdbieeh"; }
@@ -16,7 +15,7 @@
       {id = "aapbdbdomjkkjkaonfhkkikfgjllcleb";}
 
       # Browsec VPN - Free VPN for Chrome
-      # { id = "omghfjlpggmjjaagoclmmobgdodcjboh"; }
+      {id = "omghfjlpggmjjaagoclmmobgdodcjboh";}
     ];
   };
 }
