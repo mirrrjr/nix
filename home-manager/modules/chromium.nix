@@ -1,6 +1,7 @@
 {
   programs.chromium = {
     enable = true;
+    enableWidevine = true;
     extensions = [
       # Dark Reader
       # { id = "eimadpbcbfnmbkopoojfekhnkhdbieeh"; }
