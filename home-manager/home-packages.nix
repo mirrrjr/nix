@@ -7,6 +7,12 @@
     chromium
     postman
     obsidian
+    teams-for-linux
+    vlc
+    spotify
+    # imv
+    # mpv
+    # vesktop
 
     # Office
     libreoffice
@@ -17,30 +23,33 @@
     neovim
     gcc
     git
-    bc
+    # bc
     brightnessctl
     cliphist
     ffmpeg
     ffmpegthumbnailer
     fzf
-    git-graph
-    grimblast
+    # git-graph
+    # grimblast
     htop
-    ntfs3g
-    mediainfo
-    playerctl
-    silicon
+    # ntfs3g
+    # mediainfo
+    # playerctl
+    # silicon
     udisks
-    ueberzugpp
-    w3m
-    wtype
-    yt-dlp
+    # ueberzugpp
+    # w3m
+    # wtype
+    # yt-dlp
     microfetch
     ripgrep
     unzip
     wget
     wl-clipboard
     zip
+    # bottom
+    # showmethekey
+    # yt-dlp
 
     # Coding stuff
     nodejs_22

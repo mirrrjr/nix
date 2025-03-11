@@ -20,6 +20,7 @@
     ./vim.nix
     # ./waybar
     # ./wofi
+    # ./zathura.nix
     ./zed.nix
     ./zsh.nix
   ];

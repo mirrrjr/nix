@@ -3,19 +3,19 @@
     enable = true;
     extensions = [
       # Dark Reader
-      { id = "eimadpbcbfnmbkopoojfekhnkhdbieeh"; }
+      # { id = "eimadpbcbfnmbkopoojfekhnkhdbieeh"; }
 
       # Unhook - Remove YouTube Recommended & Shorts
-      { id = "khncfooichmfjbepaaaebmommgaepoid"; }
+      # { id = "khncfooichmfjbepaaaebmommgaepoid"; }
 
       # FireShot
-      { id = "mcbpblocgmgfnpjjppndjkmgjaogfceg"; }
+      # { id = "mcbpblocgmgfnpjjppndjkmgjaogfceg"; }
 
       # Google Translate
-      { id = "aapbdbdomjkkjkaonfhkkikfgjllcleb"; }
+      {id = "aapbdbdomjkkjkaonfhkkikfgjllcleb";}
 
       # Browsec VPN - Free VPN for Chrome
-      { id = "omghfjlpggmjjaagoclmmobgdodcjboh"; }
+      {id = "omghfjlpggmjjaagoclmmobgdodcjboh";}
     ];
   };
 }

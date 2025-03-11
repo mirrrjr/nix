@@ -21,8 +21,6 @@
 
   system.stateVersion = stateVersion;
 
-  nixpkgs.config.allowUnfree = true;
-
   # Automatic upgrades
   system.autoUpgrade.enable = true;
   system.autoUpgrade.dates = "weekly";
