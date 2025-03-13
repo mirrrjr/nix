@@ -28,7 +28,7 @@
         telescope.enable = true;
         autopairs.nvim-autopairs.enable = true;
         autocomplete.nvim-cmp.enable = true;
-        filetree.nvimTree.enable = false;
+        filetree.nvimTree.enable = true;
         snippets.luasnip.enable = true;
 
         filetree = {
