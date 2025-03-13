@@ -33,7 +33,7 @@
 
         filetree = {
           neo-tree = {
-            enable = false;
+            enable = true;
           };
         };
 
