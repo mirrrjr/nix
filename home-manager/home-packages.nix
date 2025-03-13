@@ -53,6 +53,7 @@
 
     # Coding stuff
     nodejs_22
+    jdk23
     yarn
     nest-cli
     python311
