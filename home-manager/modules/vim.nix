@@ -20,7 +20,7 @@
 
         theme = {
           enable = true;
-          name = "catpuccin";
+          name = "catppuccin";
           style = "darker";
         };
 
