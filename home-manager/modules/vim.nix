@@ -21,7 +21,7 @@
         theme = {
           enable = true;
           name = "catppuccin";
-          style = "darker";
+          style = "mocha";
         };
 
         statusline.lualine.enable = true;
