@@ -20,7 +20,7 @@
 
         theme = {
           enable = true;
-          name = "onedark";
+          name = "catpuccin";
           style = "darker";
         };
 
@@ -28,7 +28,7 @@
         telescope.enable = true;
         autopairs.nvim-autopairs.enable = true;
         autocomplete.nvim-cmp.enable = true;
-        filetree.nvimTree.enable = true;
+        filetree.nvimTree.enable = false;
         snippets.luasnip.enable = true;
 
         filetree = {
@@ -73,12 +73,8 @@
           bash.enable = true;
           nix.enable = true;
           rust.enable = true;
-
-          # Tailored deno experience
-          ts = {
-            enable = true;
-            lsp.server = "denols";
-          };
+          ts.enable = true;
+          html.enable = true;
         };
       };
     };
