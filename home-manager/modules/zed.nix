@@ -4,7 +4,7 @@
     userSettings = {
       "buffer_font_family" = "ComicShannsMono Nerd Font";
       "buffer_font_size" = 14;
-      "theme" = "Gruvbox Material";
+      "theme" = "Tokyo Night";
       "ui_font_family" = "ComicShannsMono Nerd Font";
       "ui_font_size" = 14;
 
