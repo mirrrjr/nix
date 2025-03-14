@@ -52,7 +52,7 @@
     # yt-dlp
 
     # Coding stuff
-    nodejs_22
+    nodejs_23
     jdk23
     yarn
     nest-cli
