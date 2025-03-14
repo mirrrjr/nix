@@ -42,7 +42,7 @@
   } @ inputs: let
     system = "x86_64-linux";
     homeStateVersion = "24.11";
-    user = "darthmirr";
+    user = "mirrr";
     hosts = [
       {
         hostname = "darthnix";

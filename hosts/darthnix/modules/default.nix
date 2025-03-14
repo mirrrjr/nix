@@ -5,7 +5,7 @@
     ./print.nix
     ./ssh.nix
     ./utils.nix
-    ./wm.nix
+    # ./wm.nix
     # ./gpu.nix
   ];
 }
