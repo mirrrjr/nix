@@ -20,8 +20,8 @@
 
         theme = {
           enable = true;
-          name = "onedark";
-          style = "darker";
+          name = "catppuccin";
+          style = "mocha";
         };
 
         statusline.lualine.enable = true;
@@ -73,12 +73,8 @@
           bash.enable = true;
           nix.enable = true;
           rust.enable = true;
-
-          # Tailored deno experience
-          ts = {
-            enable = true;
-            lsp.server = "denols";
-          };
+          ts.enable = true;
+          html.enable = true;
         };
       };
     };

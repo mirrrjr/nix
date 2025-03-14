@@ -58,6 +58,23 @@
           language-servers = ["deno-lsp"];
         }
         {
+          name = "java";
+          scope = "source.java";
+          injection-regex = "java";
+          file-types = ["java" "jav" "pde"];
+          roots = ["pom.xml" "build.gradle" "build.gradle.kts"];
+          language-servers = ["jdtls"];
+          indent = {
+            tab-width = 2;
+            unit = "  ";
+          };
+          comment-tokens = ["//"];
+          block-comment-tokens = {
+            start = "/*";
+            end = "*/";
+          };
+        }
+        {
           name = "rust";
           auto-format = false;
         }
@@ -139,6 +156,13 @@
           };
         }
       ];
+
+      # grammar
+      name = "java";
+      source = {
+        git = "https://github.com/tree-sitter/tree-sitter-java";
+        rev = "09d650def6cdf7f479f4b78f595e9ef5b58ce31e";
+      };
 
       language-server.deno-lsp = {
         command = "deno";
