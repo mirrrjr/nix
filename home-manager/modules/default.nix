@@ -7,20 +7,20 @@
     ./eza.nix
     ./git.nix
     ./helix
-    # ./hyprland
+    ./hyprland
     ./lazygit.nix
     # ./neovim.nix
-    # ./qt.nix
-    # ./qutebrowser.nix
+    ./qt.nix
+    ./qutebrowser.nix
     ./ranger.nix
     ./starship.nix
     ./stylix.nix
-    # ./swaync
+    ./swaync
     ./tmux.nix
     ./vim.nix
-    # ./waybar
-    # ./wofi
-    # ./zathura.nix
+    ./waybar
+    ./wofi
+    ./zathura.nix
     ./zed.nix
     ./zsh.nix
   ];
