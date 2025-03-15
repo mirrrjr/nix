@@ -9,7 +9,7 @@
         height = 30;
         modules-left = ["hyprland/workspaces"];
         modules-center = ["hyprland/window"];
-        modules-right = ["hyprland/language" "clock" "pulseaudio" "battery" "network" "tray"];
+        modules-right = ["hyprland/language" "network" "clock" "pulseaudio" "battery" "tray"];
         "hyprland/workspaces" = {
           disable-scroll = true;
           show-special = true;
