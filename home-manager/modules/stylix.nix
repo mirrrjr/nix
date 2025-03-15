@@ -15,13 +15,13 @@
     font-awesome
     powerline-fonts
     powerline-symbols
-    (nerdfonts.override {fonts = ["NerdFontsSymbolsOnly"];})
+    (nerdfonts.override {fonts = ["NerdFontsSymbolsOnly" "ComicShannsMono"];})
   ];
 
   stylix = {
     enable = true;
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/windows-95.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
 
     opacity = {
       desktop = 0.7;

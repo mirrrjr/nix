@@ -8,8 +8,8 @@
     postman
     obsidian
     teams-for-linux
-    vlc
-    spotify
+    #   vlc
+    # spotify
     imv
     mpv
     vesktop
@@ -41,6 +41,7 @@
     ripgrep
     unzip
     wget
+    curl
     wl-clipboard
     zip
     bottom
