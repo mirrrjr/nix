@@ -91,7 +91,7 @@
           tooltip-format-ethernet = "{ifname} ";
           tooltip-format-disconnected = "Disconnected";
           max-length = 50;
-        }
+        };
 
         "tray" = {
           icon-size = 14;
