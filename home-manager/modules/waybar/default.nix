@@ -80,6 +80,19 @@
           format-alt = "{:%A, %B %d at %R}";
         };
 
+        "network": {
+          interface = wlp2s0;
+          format = "{ifname}";
+          format-wifi = "{essid} ({signalStrength}%) ";
+          format-ethernet = "{ipaddr}/{cidr} 󰊗";
+          format-disconnected = ""; # An empty format will hide the module.
+          tooltip-format = "{ifname} via {gwaddr} 󰊗";
+          tooltip-format-wifi = "{essid} ({signalStrength}%) ";
+          tooltip-format-ethernet = "{ifname} ";
+          tooltip-format-disconnected = "Disconnected";
+          max-length = 50;
+        }
+
         "tray" = {
           icon-size = 14;
           spacing = 1;
