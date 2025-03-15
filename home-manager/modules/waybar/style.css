@@ -31,8 +31,7 @@ window#waybar {
 #pulseaudio,
 #tray,
 #language,
-#network,
-#weather {
+#network {
     padding: 0 1px;
     margin: 0 1px;
 }
