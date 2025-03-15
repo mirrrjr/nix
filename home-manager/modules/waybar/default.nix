@@ -6,7 +6,7 @@
       mainBar = {
         layer = "top";
         position = "top";
-        height = 20;
+        height = 15;
         modules-left = ["hyprland/workspaces"];
         modules-center = ["hyprland/window"];
         modules-right = ["hyprland/language" "clock" "pulseaudio" "battery" "tray"];
@@ -75,11 +75,6 @@
           format-icons = ["" "" "" "" ""];
         };
 
-        "clock" = {
-          format = "{:%d.%m.%Y - %H:%M}";
-          format-alt = "{:%A, %B %d at %R}";
-        };
-
         "network" = {
           interface = "wlp2s0";
           format = "{ifname}";
@@ -91,6 +86,11 @@
           tooltip-format-ethernet = "{ifname} ";
           tooltip-format-disconnected = "Disconnected";
           max-length = 50;
+        };
+
+        "clock" = {
+          format = "{:%d.%m.%Y - %H:%M}";
+          format-alt = "{:%A, %B %d at %R}";
         };
 
         "tray" = {
