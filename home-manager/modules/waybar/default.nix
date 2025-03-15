@@ -76,9 +76,9 @@
         };
 
         "network" = {
-          interface = "wlp4s0";
+          interface = "wlp4s0 ";
           format = "{ifname}";
-          format-wifi = "{essid} ({signalStrength}%) ";
+          # format-wifi = "{essid} ({signalStrength}%) ";
           format-ethernet = "{ipaddr}/{cidr} 󰊗";
           format-disconnected = ""; # An empty format will hide the module.
           tooltip-format = "{ifname} via {gwaddr} 󰊗";
