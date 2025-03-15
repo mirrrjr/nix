@@ -56,7 +56,7 @@
       };
 
       animations = {
-        enabled = true;
+        enabled = false;
       };
 
       input = {
