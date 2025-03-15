@@ -41,12 +41,12 @@
           tooltip = false;
         };
 
-        "custom/weather" = {
-          format = " {} ";
-          exec = "curl -s 'wttr.in/Tashkent?format=%c%t'";
-          interval = 300;
-          class = "weather";
-        };
+        # "custom/weather" = {
+        #   format = " {} ";
+        #   exec = "curl -s 'wttr.in/Tashkent?format=%c%t'";
+        #   interval = 300;
+        #   class = "weather";
+        # };
 
         "pulseaudio" = {
           format = "{icon} {volume}%";
