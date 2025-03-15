@@ -80,8 +80,8 @@
           format-alt = "{:%A, %B %d at %R}";
         };
 
-        "network": {
-          interface = wlp2s0;
+        "network" = {
+          interface = "wlp2s0";
           format = "{ifname}";
           format-wifi = "{essid} ({signalStrength}%) ";
           format-ethernet = "{ipaddr}/{cidr} 󰊗";
