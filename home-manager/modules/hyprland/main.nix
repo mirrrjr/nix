@@ -17,6 +17,7 @@
       "$mainMod" = "SUPER";
       "$terminal" = "alacritty";
       "$fileManager" = "$terminal -e sh -c 'ranger'";
+      "$browser" = "chromium";
       "$menu" = "wofi";
 
       exec-once = [
