@@ -96,7 +96,7 @@
         "noborder,nofocus,class:(showmethekey-gtk)"
 
         "workspace 1,class:(chromium)"
-        "workspace 2,class:(zeditor)"
+        "workspace 2,class:(zed)"
         "workspace 3,class:(obsidian)"
         "workspace 3,class:(zathura)"
         "workspace 4,class:(com.obsproject.Studio)"
