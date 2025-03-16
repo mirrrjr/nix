@@ -21,7 +21,6 @@
     git
     bc
     brightnessctl
-    pactl
     cliphist
     ffmpeg
     ffmpegthumbnailer
