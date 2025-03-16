@@ -6,7 +6,7 @@
       "$mainMod SHIFT, Q, exit,"
       "$mainMod,       R, exec, $fileManager"
       "$mainMod SHIFT, O, exec, $browser"
-      "$mainMod        Z, exec, $editor"
+      "$mainMod SHIFT, Z, exec, $editor"
       "$mainMod,       F, togglefloating,"
       "$mainMod,       D, exec, $menu --show drun"
       "$mainMod,       P, pin,"

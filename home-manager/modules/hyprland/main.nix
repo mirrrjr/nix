@@ -18,7 +18,7 @@
       "$terminal" = "alacritty";
       "$fileManager" = "$terminal -e sh -c 'ranger'";
       "$browser" = "chromium";
-      "$editor" = "zed";
+      "$editor" = "zeditor";
       "$menu" = "wofi";
 
       exec-once = [
