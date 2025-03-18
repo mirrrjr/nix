@@ -9,7 +9,7 @@
     obsidian
     teams-for-linux
     #   vlc
-    # spotify
+    spotify
     imv
     mpv
     vesktop

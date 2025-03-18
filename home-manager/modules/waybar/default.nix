@@ -6,10 +6,10 @@
       mainBar = {
         layer = "top";
         position = "top";
-        height = 20;
+        height = 30;
         modules-left = ["hyprland/workspaces"];
         modules-center = ["hyprland/window"];
-        modules-right = ["hyprland/language" "clock" "pulseaudio" "battery" "tray"];
+        modules-right = ["hyprland/language" "network" "clock" "pulseaudio" "battery" "tray"];
         "hyprland/workspaces" = {
           disable-scroll = true;
           show-special = true;
@@ -41,12 +41,12 @@
           tooltip = false;
         };
 
-        "custom/weather" = {
-          format = " {} ";
-          exec = "curl -s 'wttr.in/Tashkent?format=%c%t'";
-          interval = 300;
-          class = "weather";
-        };
+        # "custom/weather" = {
+        #   format = " {} ";
+        #   exec = "curl -s 'wttr.in/Tashkent?format=%c%t'";
+        #   interval = 300;
+        #   class = "weather";
+        # };
 
         "pulseaudio" = {
           format = "{icon} {volume}%";
@@ -73,6 +73,19 @@
           format-charging = " {capacity}%";
           format-alt = "{time} {icon}";
           format-icons = ["" "" "" "" ""];
+        };
+
+        "network" = {
+          interface = "wlp4s0";
+          format = "{ifname}";
+          # format-wifi = "{essid} ({signalStrength}%) ";
+          format-ethernet = "{ipaddr}/{cidr} 󰊗";
+          format-disconnected = ""; # An empty format will hide the module.
+          tooltip-format = "{ifname} via {gwaddr} 󰊗";
+          tooltip-format-wifi = "{essid} ({signalStrength}%) ";
+          tooltip-format-ethernet = "{ifname} ";
+          tooltip-format-disconnected = "Disconnected";
+          max-length = 90;
         };
 
         "clock" = {

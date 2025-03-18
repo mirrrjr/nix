@@ -3,7 +3,7 @@
     border-radius: 0px;
     font-family: "JetBrains Mono";
     font-weight: bold;
-    font-size: 16px;
+    font-size: 13px;
     min-height: 0;
     color: #ebdbb2;
 }
@@ -31,7 +31,7 @@ window#waybar {
 #pulseaudio,
 #tray,
 #language,
-#weather {
+#network {
     padding: 0 1px;
     margin: 0 1px;
 }
@@ -64,6 +64,12 @@ window#waybar {
     margin: 0;
     color: #458588;
     border-bottom: 5px solid #458588;
+}
+
+#network {
+    margin: 0;
+    color: #458580;
+    border-bottom: 5px solid #458580;
 }
 
 #clock {
