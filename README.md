@@ -69,7 +69,7 @@ Welcome to my NixOS configuration built for efficiency and aesthetics. Right now
 
 - 🖥️ **Multiple Hosts Support**: Easy to configure for different hosts.
 - 🎨 **Gruvbox Theme**: A perfect blend of vibrant and subtle colors.
-- 🪟 **Gnome -- Dash To Panel**: Easy navigation across multiple windows and minimal design
+- 🪟 **Hyprland**: Easy navigation across multiple windows and minimal design
 - 🏠 **Home Manager Integration**: lots of stuff configured.
 - 🧇 **Tmux**: with my own hotkeys.
 - 🌟 **Zsh + starship**: Efficient shell setup with lots of aliases.
