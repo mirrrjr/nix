@@ -1,3 +1,5 @@
+> This repository is no longer being supported, I recommend switching to the new repository: [link](https://github.com/mirrrrrrrrrrrr/nixos-config)
+
 # ❄️ NixOS Config
 
 [![NixOS](https://img.shields.io/badge/NixOS-24.11-blue.svg)](https://nixos.org)
@@ -129,8 +131,8 @@ To get started with this setup, follow these steps:
    ```bash
    cd .dotfiles
    git add .
-   nixos-rebuild switch --flake ./#<hostname>
-   # or nixos-install --flake ./#<hostname> if you are installing on a fresh system
+   sudo nixos-rebuild switch --flake ./#<hostname>
+   # or sudo nixos-install --flake ./#<hostname> if you are installing on a fresh system
    home-manager switch --flake ./#<username>
    ```
 
