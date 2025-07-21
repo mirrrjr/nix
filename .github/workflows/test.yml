@@ -1,6 +1,6 @@
 name: Test CI
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   test-flake:
@@ -15,8 +15,6 @@ jobs:
 
       - name: Cache Nix store
         uses: DeterminateSystems/flakehub-cache-action@main
-        # with:
-        #   token: ${{ secrets.FLAKEHUB_AUTH_TOKEN }}
 
       - name: Check up flake configuration
         run: nix flake check --all-systems --show-trace
@@ -37,8 +35,6 @@ jobs:
 
       - name: Cache Nix store
         uses: DeterminateSystems/flakehub-cache-action@main
-        # with:
-        #   token: ${{ secrets.FLAKEHUB_AUTH_TOKEN }}
 
       - name: Check up flake configuration
         run: nix flake check --all-systems --show-trace
