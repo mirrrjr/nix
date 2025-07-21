@@ -6,10 +6,10 @@
       mainBar = {
         layer = "top";
         position = "top";
-        height = 30;
+        height = 26;
         modules-left = ["hyprland/workspaces"];
-        modules-center = ["hyprland/window"];
-        modules-right = ["hyprland/language" "network" "clock" "pulseaudio" "battery" "tray"];
+        modules-center = ["clock"]; # hyprland/window
+        modules-right = ["hyprland/language" "network" "pulseaudio" "battery" "tray"];
         "hyprland/workspaces" = {
           disable-scroll = true;
           show-special = true;
@@ -35,8 +35,8 @@
         };
 
         "hyprland/language" = {
-          format-en = "🇺🇸";
-          format-ru = "🇷🇺";
+          format-en = "us";
+          format-ru = "ru";
           min-length = 5;
           tooltip = false;
         };
@@ -89,12 +89,12 @@
         };
 
         "clock" = {
-          format = "{:%d.%m.%Y - %H:%M}";
+          format = "{%H:%M | %d/%m/%Y}";
           format-alt = "{:%A, %B %d at %R}";
         };
 
         "tray" = {
-          icon-size = 14;
+          icon-size = 11;
           spacing = 1;
         };
       };

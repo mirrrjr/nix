@@ -9,22 +9,23 @@
 }
 
 window#waybar {
-    background: #1d2021;
+    background: #080808;
 }
 
 /* Workspace Buttons */
 #workspaces button label {
-    color: #ebdbb2;
+    color: #ffffff;
     padding: 0 1px;
 }
 
 #workspaces button.active label {
-    color: #1d2021;
+    color: #d65d0e;
+    /* 1d2021; */
 }
 
-#workspaces button.active {
+/* #workspaces button.active {
     background: #d65d0e;
-}
+} */
 
 #clock,
 #battery,
@@ -38,48 +39,48 @@ window#waybar {
 
 #language {
     margin: 0;
-    color: #d79921;
-    border-bottom: 5px solid #d79921;
+    /* color: #d79921;
+    border-bottom: 5px solid #d79921; */
 }
 
 #custom-weather {
     margin: 0;
-    color: #98971a;
-    border-bottom: 5px solid #98971a
+    /* color: #98971a;
+    border-bottom: 5px solid #98971a */
 }
 
 #pulseaudio {
     margin: 0;
-    color: #689d6a;
-    border-bottom: 5px solid #689d6a;
+    /* color: #689d6a;
+    border-bottom: 5px solid #689d6a; */
 }
 
 #pulseaudio.muted {
     padding: 0 20px;
-    color: #cc241d;
-    border-bottom: 5px solid #cc241d;
+    /* color: #cc241d;
+    border-bottom: 5px solid #cc241d; */
 }
 
 #battery {
     margin: 0;
-    color: #458588;
-    border-bottom: 5px solid #458588;
+    /* color: #458588;
+    border-bottom: 5px solid #458588; */
 }
 
 #network {
     margin: 0;
-    color: #458580;
-    border-bottom: 5px solid #458580;
+    /* color: #458580;
+    border-bottom: 5px solid #458580; */
 }
 
 #clock {
     margin: 0;
-    color: #b16286;
-    border-bottom: 5px solid #b16286;
+    /* color: #b16286;
+    border-bottom: 5px solid #b16286; */
 }
 
 #tray {
     margin: 0;
-    color: #d65d0e;
-    border-bottom: 5px solid #d65d0e;
+    /* color: #d65d0e;
+    border-bottom: 5px solid #d65d0e; */
 }

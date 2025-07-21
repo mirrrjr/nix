@@ -26,7 +26,8 @@
     nixpkgs-unstable,
     home-manager,
     ...
-  } @ inputs: let
+  } @ inputs: 
+  let
     system = "x86_64-linux";
     homeStateVersion = "25.05";
     user = "mirrr";
@@ -70,7 +71,6 @@
       extraSpecialArgs = {
         inherit inputs homeStateVersion user;
       };
-
       modules = [
         ./home-manager/home.nix
       ];

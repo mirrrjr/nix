@@ -17,8 +17,8 @@
       "$mainMod" = "SUPER";
       "$terminal" = "alacritty";
       "$fileManager" = "$terminal -e sh -c 'ranger'";
-      "$browser" = "chromium";
-      "$editor" = "zeditor";
+      "$browser" = "firefox";
+      "$editor" = "vim";
       "$menu" = "wofi";
 
       exec-once = [
@@ -28,10 +28,10 @@
       ];
 
       general = {
-        gaps_in = 0;
-        gaps_out = 0;
+        gaps_in = 1;
+        gaps_out = 1;
 
-        border_size = 5;
+        border_size = 2;
 
         "col.active_border" = "rgba(d65d0eff) rgba(98971aff) 45deg";
         "col.inactive_border" = "rgba(3c3836ff)";
@@ -95,8 +95,8 @@
         "move 990 60,size 900 170,pin,noinitialfocus,class:(showmethekey-gtk)"
         "noborder,nofocus,class:(showmethekey-gtk)"
 
-        "workspace 1,class:(chromium)"
-        "workspace 2,class:(zed)"
+        "workspace 1,class:(firefox)"
+        "workspace 2,class:(code)"
         "workspace 3,class:(obsidian)"
         "workspace 3,class:(zathura)"
         "workspace 4,class:(com.obsproject.Studio)"

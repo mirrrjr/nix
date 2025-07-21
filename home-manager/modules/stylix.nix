@@ -15,16 +15,16 @@
     font-awesome
     powerline-fonts
     powerline-symbols
-    (nerdfonts.override {fonts = ["NerdFontsSymbolsOnly" "ComicShannsMono"];})
+    (nerdfonts.override {fonts = ["NerdFontsSymbolsOnly" "FantasqueSansM"];})
   ];
 
   stylix = {
     enable = true;
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+    base16Scheme = ./themes/moonfly.yaml # "${pkgs.base16-schemes}/share/themes/moonlight.yaml";
 
     opacity = {
-      desktop = 0.7;
+      desktop = 1.0;
       terminal = 1.0;
     };
 
@@ -38,7 +38,7 @@
 
     cursor = {
       name = "DMZ-Black";
-      size = 24;
+      size = 22;
       package = pkgs.vanilla-dmz;
     };
 
@@ -73,9 +73,6 @@
       light = "WhiteSur";
     };
 
-    image = pkgs.fetchurl {
-      url = "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/raw/branch/master/png/gruvbox-dark-blue.png";
-      sha256 = "1jrmdhlcnmqkrdzylpq6kv9m3qsl317af3g66wf9lm3mz6xd6dzs";
-    };
+    image = ../../assets/rick.png;
   };
 }

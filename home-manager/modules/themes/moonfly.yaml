@@ -1,0 +1,22 @@
+# base16 port of the Moonfly color scheme
+system: "base16"
+name: "Moonfly"
+author: "mirrrjr (https://github.com/mirrrjr)"
+variant: "dark"
+palette:
+  base00: "#080808"   # Background
+  base01: "#323437"   # Black (normal)
+  base02: "#949494"   # Black (bright)
+  base03: "#b2ceee"   # Selection
+  base04: "#bdbdbd"   # Foreground
+  base05: "#eeeeee"   # Bold
+  base06: "#e4e4e4"   # White (bright)
+  base07: "#c6c6c6"   # White (normal)
+  base08: "#ff5d5d"   # Red (normal)
+  base09: "#ff5189"   # Red (bright)
+  base0A: "#e3c78a"   # Yellow (normal)
+  base0B: "#8cc85f"   # Green (normal)
+  base0C: "#85dc85"   # Cyan (bright)
+  base0D: "#80a0ff"   # Blue (normal)
+  base0E: "#cf87e8"   # Purple (normal)
+  base0F: "#36c692"   # Green (bright)
