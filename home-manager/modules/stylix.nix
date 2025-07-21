@@ -21,7 +21,7 @@
   stylix = {
     enable = true;
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/moonlight.yaml";
+    base16Scheme = ./themes/moonfly.yaml # "${pkgs.base16-schemes}/share/themes/moonlight.yaml";
 
     opacity = {
       desktop = 1.0;
