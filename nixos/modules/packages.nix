@@ -5,6 +5,7 @@
   };
 
   environment.systemPackages = [
-    # postgresql_17
+    gcc
+    boost
   ];
 }

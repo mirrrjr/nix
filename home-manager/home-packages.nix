@@ -4,18 +4,14 @@
   home.packages = with pkgs; [
     # Desktop apps
     telegram-desktop
-    chromium
+    firefox
     postman
     obsidian
-    teams-for-linux
-    #   vlc
-    spotify
+    vlc
     imv
-    mpv
-    vesktop
 
     # Office
-    # libreoffice
+    libreoffice
 
     # CLI utils
     git
@@ -25,7 +21,6 @@
     ffmpeg
     ffmpegthumbnailer
     fzf
-    git-graph
     grimblast
     htop
     ntfs3g
@@ -46,15 +41,16 @@
     zip
     bottom
     showmethekey
-    yt-dlp
 
     # Coding stuff
-    nodejs_23
+    nodejs
     # jdk23
     # yarn
-    nest-cli
+    # nest-cli
     python311
     deno
+    php
+    rust
 
     # WM stuff
     libsForQt5.xwaylandvideobridge

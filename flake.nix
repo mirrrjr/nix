@@ -1,33 +1,21 @@
 {
-  description = "DARTHMIRR NIX CONFIG";
+  description = "mirrr's nix flake configuration";
 
   inputs = {
     # Nix ecosystem
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
 
     # Home Manager
     home-manager = {
-      url = "github:nix-community/home-manager/release-24.11";
+      url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    # Neovim Framework repository
-    nvf.url = "github:notashelf/nvf";
-
-    # HELIX editor
-    helix = {
-      url = "github:helix-editor/helix/master";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        flake-utils.follows = "flake-utils";
-      };
     };
 
     # Stylix
     stylix = {
-      url = "github:danth/stylix/release-24.11";
+      url = "github:danth/stylix/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -37,20 +25,19 @@
     nixpkgs,
     nixpkgs-unstable,
     home-manager,
-    nvf,
     ...
   } @ inputs: let
     system = "x86_64-linux";
-    homeStateVersion = "24.11";
+    homeStateVersion = "25.05";
     user = "mirrr";
     hosts = [
       {
         hostname = "darthnix";
-        stateVersion = "24.11";
+        stateVersion = "25.05";
       }
       {
         hostname = "wsl";
-        stateVersion = "24.11";
+        stateVersion = "25.05";
       }
     ];
 

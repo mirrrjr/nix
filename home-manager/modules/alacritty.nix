@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       window = {
-        decorations = "none"; # Top barni yashiradi
+        decorations = "none";
         # opacity = 0.8;
         blur = true;
       };
